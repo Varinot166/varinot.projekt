@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cef9fc;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 350px;
+  margin-bottom: 36px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.modules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.module {
+  background-color: #a8e0e4;
+  padding: 15px 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.module:hover {
+  background-color: #7ddde0;
+  cursor: pointer;
+}
+
+/* Responsive për pajisje të vogla */
+@media (max-width: 600px) {
+  .module {
+    flex: 1 1 100%;
+  }
+}
